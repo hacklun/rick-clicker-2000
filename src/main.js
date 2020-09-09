@@ -26,3 +26,11 @@ function removeClicker(e) {
     clickers--;
     checkGameOver();
 }
+
+function checkGameOver() {
+    document.querySelector("#remain").innerHTML = clickers;
+    if (clickers === 0) {
+        const taken = Math.round((Date.now() - startTime) / 1000);
+        alert(`De-rick-ed in ${taken} seconds!`);
+    }
+}
