@@ -14,5 +14,9 @@ function addClicker() {
 
     const img = new Image();
     img.src = "res/images/rick.png";
-    
+    img.style.position = "absolute";
+    img.addEventListener("click", removeClicker, false);
+
+    document.querySelector("#board").appendChild(img);
+    sync(img, pos);
 }
