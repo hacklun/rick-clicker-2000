@@ -20,3 +20,9 @@ function addClicker() {
     document.querySelector("#board").appendChild(img);
     sync(img, pos);
 }
+
+function removeClicker(e) {
+    e.target.parentNode.removeChild(e.target);
+    clickers--;
+    checkGameOver();
+}
