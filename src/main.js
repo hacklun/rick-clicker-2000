@@ -34,3 +34,7 @@ function checkGameOver() {
         alert(`De-rick-ed in ${taken} seconds!`);
     }
 }
+
+for (let i = 0; i < clickers; i++) {
+    addClicker();
+}
